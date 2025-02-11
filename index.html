@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons link-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+     <!-- remix icons link-->
+      <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+      <!-- google icons link-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+
+        <ul class="navlist">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Services</a></li>
+           <li><a href="#">Portfolio</a></li>
+           <li><a href="#">Skills</a></li>
+           <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+             <a href="#" class="nav-btn">Hire Me!</a>
+             <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+           <h6>Hi!, <span>my name is</span></h6>
+           <h1><span>Sulyman </span>Abdur-rafi' Kehinde</h1>
+           <h4>I possess expertise in <span class="input"></span></h4>
+           <p>I am multifaceted expertise from Nigeria, kwara. I have an outrageous expertise in Arabic language, dedicated Teacher of Qur'anic Studies,
+            knownledgeable instructor teaching various aspects of Islamic Studies, experienced in designing user-friendly websites, and a Skilled designer 
+            crafting intuitive and visually appealing user interfaces.</p>
+
+            <div class="hero-icons">
+        
+        <a href="#"><i class="ri-whatsapp-fill"></i></a>
+        <a href="#"><i class="ri-messenger-fill"></i></a>
+        <a href="#"><i class="ri-dribbble-line"></i></a>
+        <a href="#"><i class="ri-behance-fill"></i></a>
+            </div>
+
+       <div class="hero-btn">
+              <a href="#" class="btn">Download CV</a>
+              <a href="#" class="btn2">My Skills</a>
+       </div>     
+        </div>
+
+        <div class="hero-img">
+             <img src="dev3.jpg">
+        </div>
+
+    </section>
+
+    <div class="scroll">
+        <a href="#"><i class="ri-scroll-to-bottom-fill"></i>Scroll
+            Bottom</a>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      
+    <script type="text/javascript">
+        var typed = new Typed(".input", {
+            strings:["Arabic.","Qur'aan tutoring.","Islamic Studies teaching.","web development.", "UI-UX design"],
+            typeSpeed: 80,
+            backSpeed: 70,
+            loop: true
+        }); 
+    
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
